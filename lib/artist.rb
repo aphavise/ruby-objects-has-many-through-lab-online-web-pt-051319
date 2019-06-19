@@ -20,8 +20,8 @@ class Artist
     songs.map {|song| song.genre}
   end
 
-  def new_song(song, genre)
-    Song.new(name, genre)
+  def new_song(song, genre, artist)
+    Song.new(name, genre, artist)
   end
 
 end
